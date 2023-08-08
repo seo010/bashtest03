@@ -1,0 +1,8 @@
+-	multipart의 content-type이 message/rfc822인 경우
+-	multipart의 content-type이 message/external-body인 경우
+-	-I 실행옵션이 있으면서 본문 내 이미지인 경우
+1)	content-disposition이 inline이거나, content-Type이 image이면서 content-ID가 존재하는 경우 본문 내 이미지로 판단
+2)	본문 내 이미지는 첨부로 저장되어도, 본문 저장 시 제거하지 않는다.
+-	multipart의 content-disposition이 attachment인 경우
+-	multipart의 content-type이 application인 경우
+-	multipart의 content-type이 image인 경우
