@@ -1,0 +1,11 @@
+VLOG(DINFO)<<"[NOLOG] SnsMessenger content NULL";
+	string infofile;
+	string body;
+	string bodypath;
+	int seq = 0;
+	seq = g_EmassFileName.getSeq()+1;
+	g_EmassFileName.setSeq(seq);
+	infofile = g_EmassFileName.getMsgPath();
+	msgPath = infofile;
+	body = getWebsocketInfo().getBody();
+	bodypath = g_EmassFileName.getBodyPath();
